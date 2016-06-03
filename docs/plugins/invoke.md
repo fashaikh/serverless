@@ -33,3 +33,6 @@ serverless invoke --function functionName --stage dev --region us-east-1 --path 
 ```
 
 This example will pass the json data in the `lib/data.json` file (relative to the root of the service) while invoking the specified/deployed function.
+
+## How It Works
+When you run the `serverless invoke` command for a particular function, we invoke that function via the Lambda API based on the options provided. We then output the result of the invocation to the terminal for you to view and debug. You can also view some invocation logging information by adding the `--log` option, which will output data like duration and billed duration.
